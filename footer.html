@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+
+    <!-- custom styleing -->
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- jQuery libery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- popper .js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!-- script Bootstrap -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    
+    <!-- instafeed -->
+    <script src="js/instafeed.js"></script>
+
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '5d83afc822dc4b89810b4f680cc8ad32',
+        accessToken: '44cdc79c8fdb4439810ab5b622c97edc'
+    });
+    feed.run();
+</script>
+</head>
+
+<body>
+   
+    <footer class="">
+        <h2>følg os</h2>
+
+        <div id="instafeed"></div>
+
+        <section class="container-fluid" id="social-media">
+            <article class="container">
+                <!--Facebook-->
+                <a target="_blank" href="https://www.facebook.com/ServiceCo">
+                    <span class="fa fa-facebook-square" aria-hidden="true"><span class="hvilketmedie"> FACEBOOK</span></span>
+                </a>
+
+                <!--instagram-->
+                <a target="_blank" href="https://www.instagram.com/service_co/">
+                    <span class="fa fa-instagram" aria-hidden="true"><span class="hvilketmedie"> Instagram</span></span>
+                </a>
+                <!--youtube-->
+                <a target="_blank" href="https://www.youtube.com/Guideskole">
+                    <span class="fa fa-youtube-square" aria-hidden="true"><span class="hvilketmedie"> Youtube</span></span>
+                </a>
+                <!--vimeo-->
+                <a target="_blank" href="https://vimeo.com/serviceco">
+                    <span class="fa fa-vimeo-square" aria-hidden="true"><span class="hvilketmedie"> Vimeo</span></span>
+                </a>
+                <!--snapchat-->
+                <!-- Button to Open the Modal -->
+                <a href="#" data-toggle="modal" data-target="#myModal">
+                    <span class="fa fa-snapchat-square" aria-hidden="true"><span class="hvilketmedie"> Snap chat</span></span>
+                </a>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Følg Service&amp;Co. på snapchat.</h4>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <a target="_blank" href="https://www.snapchat.com/add/serviceco/"><span class="hvilketmedie">snap chat</span>
+                                    <img class="w-100" src="/Files/Templates/Designs/SoC17/img/snapcode.png" alt="snapcode service&amp;co.">
+                                </a>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <article class="col-lg-4 adresse">
+                        <img src="img/service-co-logo.png" alt="service&co" class="w-100">
+                        <p>Service &amp; Co. A/S - Uddannelsen ApS<br />
+                            Tilsluttet Rejsegarantifonden med nr. 1243</p>
+                        <h4>adresse</h4>
+                        <p>Mjølnersvej 4<br />8230 Åbyhøj</p>
+                    </article>
+                    <article class="col-lg-4 betingelser">
+                        <h4>betingelser</h4>
+                        <h6><a href="#">FAQ</a></h6>
+                        <h6><a href="#">REJSEBETINGLSER</a></h6>
+                        <h6><a href="#">PAKKEREJSELOV</a></h6>
+                        <h6><a href="#">COOKIEPOLITIK</a></h6>
+                        <h6><a href="#">PERSON DATAPOLITIK</a></h6>
+                    </article>
+                    <article class="col-lg-4 kontakt">
+                        <h4>kontakt</h4>
+                        <div>
+                            <p>
+                                <a href="tel:+4570211222">+45 70 211 222</a><br />
+                                <a href="mailto:info@service-co.dk">info@service-co.dk</a>
+                            </p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Man-tors</td>
+                                        <td>kl 10:00-17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fre</td>
+                                        <td>kl 10:00-15:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/***************************************************/
+/************          Top nav          ************/
+/***************************************************/
+.first-nav {
+    background-color: #1C7B91;
+    padding: 2px 0;
+
+    & .navbar-brand {
+        & img {
+            width: 200px;
+        }
+    }
+}
+
+/***************************************************/
+/************            Nav            ************/
+/***************************************************/
+
+nav {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+
+    #collapsibleNavbar {
+        z-index: 9999;
+
+        & ul {
+            padding: 0 15px;
+
+            & li {
+
+                flex-grow: 1;
+
+                /*text-align: center;
+                &:first-child {
+                    text-align: left;
+                }
+                &:last-child {
+                    text-align: right;
+                }*/
+                & .nav-link {
+                    padding-top: 16px !important;
+                    padding-bottom: 16px !important;
+                    text-transform: uppercase;
+                }
+
+                .dropdownMenu {
+                    border-top: 0.1px solid white;
+                    visibility: hidden;
+                    position: absolute;
+                    width: 100%;
+                    background-color: rgba(5, 91, 111, 0.8);
+                    left: 0;
+
+                    & .dropdown-item {
+                        margin: 18px 0;
+                        padding-left: 9px;
+                        color: white;
+
+                        &:hover {
+                            background-color: transparent;
+                            text-decoration: underline;
+                        }
+
+                        &:first-child {
+                            margin-top: 45px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 45px;
+                        }
+                    }
+                }
+
+                &:hover .dropdownMenu {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+
+
+/***************************************************/
+/************           Footer          ************/
+/***************************************************/
+footer {
+    & h1, h2, h3, h4, h5, h6, p, a, td {
+        font-family: Roboto!important;
+    }
+    & h2 {
+        text-transform: uppercase;
+        color: #707070;
+        text-align: center;
+        
+    }
+    
+    & #social-media {
+        background-color: #07A29C;
+        & article {
+            display: flex;
+            & a {
+                line-height: 80px;
+                text-align: center;
+                vertical-align: middle!important;
+                flex: 1;
+                justify-content: space-between;
+                color: white;
+                & span {
+                    font-size: 50px;
+                    vertical-align: middle;
+                }
+                & .hvilketmedie {
+                    display: none;
+
+                }
+            }
+        }
+    }
+
+    & .container-fluid:last-child {
+        padding-bottom: 20px;
+        padding-top: 30px;
+        background-color: #1C7B91;
+        text-align: center;
+        color: white;
+
+        & h4 {
+            text-transform: uppercase;
+        }
+
+        & a {
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        & table {
+            margin: 0 auto;
+            text-align: left;
+
+            & td {
+                min-width: 100px;
+            }
+        }
+
+        & .kontakt {
+            display: flex;
+            flex-direction: column;
+
+            & h4 {
+                margin-top: auto;
+                flex: 1;
+            }
+
+            & div {
+                flex: 3;
+            }
+        }
+
+        & .betingelser {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+
+            & h4 {
+                flex: 1;
+                margin-top: auto;
+            }
+
+            & h6 {
+                flex: 1;
+            }
+        }
+
+        & .adresse {
+            & img {
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer .betingelser {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: none!important;
+        border-right: none!important;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+}
